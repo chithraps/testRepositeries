@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forget Password</title>
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/adminStyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="login-container">
+          <h2>Enter email</h2>
+          <form method="post" action="">
+            <div class="form-group">
+              <label for="username">Email</label>
+              <input type="text" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="pass" name="password" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="repassword">Confirm Password</label>
+                <input type="password" id="rePass" name="rePassword" class="form-control" required>
+              </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">submit</button>
+          </form>
+          <a href="/admin">Back to Login</a>
+        </div>
+        <%
+            if(typeof message!== 'undefined'){
+        %>
+            <p style="color: #ff0000;"><%= message %></p>
+        <%
+        }
+        %>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS scripts (include jQuery and Popper.js before Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

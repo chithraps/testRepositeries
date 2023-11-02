@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-image:url('/assets/bgimage.jpg');
+}
+.h3-color{
+    color: rgb(49, 122, 190);
+}
+.content{
+    height : 100vh;
+}
+.login-btn{
+    background-color: rgb(49, 122, 190);
+}
